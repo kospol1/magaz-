@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+  <div class="col-sm-6">
+  		<%= image_tag @product.photo_file_name, size: "400x350" %>
+  </div>
+  <div class="col-sm-6">
+	<%= @product.description %></br>
+	<%= @product.cost %></br>
+	<%= @product.maker %></br>
+  </div>
+    <%= button_tag "Comments",  class: 'btn btn-success' %>
+  	<%= button_tag "Buy it", class: 'btn btn-danger' %>
+  </div>
+
+</div>

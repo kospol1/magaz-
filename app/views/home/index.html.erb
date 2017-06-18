@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="col-sm-4">
+  <div class="panel panel-success">
+  <div class="panel-heading">
+    <h3><%= link_to product.prname, product_path(product) %></h3>
+  </div>
+  <div class="panel-body"><%= image_tag product.photo_file_name, size: "200x150" %></div>
+  
+  <center><%= product.cost %><br /></center>
+  <!-- <% if product.is_here == true %> -->
+    <!-- <p>available</p> -->
+    <!-- <% else %> -->
+    <!-- <p>disalable</p> -->
+
+  <!-- <% end %> -->
+  </div>
+  </div>
+<% end %>
+    
+  
+
+</div>
+</div>
+

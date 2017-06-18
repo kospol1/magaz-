@@ -1,0 +1,9 @@
+<% @products.each do [order] %>
+	<p><%= product.prname %>
+	<%= link-to "Accept", order_path(:id => @order.id),
+		method: :put, data: {confirm: 'are you sure?'},
+		class: 'btn btn-sm btn-size btn-info' %>
+	<%= link_to "Delete", delete_order_path(:id => order.id),
+		method: :put, data: { confirm: 'are you sure?'},
+		class: 'btn btn-sm btn-size btn-info' %></p>
+<% end %>
