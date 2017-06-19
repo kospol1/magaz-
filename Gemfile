@@ -45,8 +45,7 @@ gem 'activeadmin'
 gem "paperclip"
 
 #For design
-gem 'bootstrap-sass'
-#gem 'bootstrap-will_paginate'
+gem 'materialize-sass'
 gem 'will_paginate'
 
 group :development, :test do
